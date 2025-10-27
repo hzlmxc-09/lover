@@ -13,17 +13,10 @@
       justify-content: center;
       align-items: center;
       background-color: #a36cf0; /* Purple background */
-      border: 12px solid;
+      border: 10px solid transparent;
       border-image: linear-gradient(45deg, #ff6f91, #ff4b6e);
       border-image-slice: 1;
       border-radius: 25px;
-      animation: glow 5s ease-in-out infinite;
-    }
-
-    @keyframes glow {
-      0% { box-shadow: 0 0 10px #ff6f91, 0 0 20px #ff4b6e; }
-      50% { box-shadow: 0 0 25px #ff4b6e, 0 0 40px #ff6f91; }
-      100% { box-shadow: 0 0 10px #ff6f91, 0 0 20px #ff4b6e; }
     }
 
     h1 {
@@ -32,7 +25,6 @@
       color: white;
       margin: 0;
       text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
-      animation: fadeIn 2s ease forwards;
     }
 
     p {
@@ -42,36 +34,21 @@
       margin-top: 10px;
       max-width: 80%;
       text-align: center;
-      animation: fadeIn 3s ease forwards;
     }
 
+    /* Optional: fade-in animation */
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
     }
-  </style>
-</head>
-<body>
-  <h1>LOVE</h1>
-  <p>“Our souls met long before our eyes did.”</p>
-</body>
-</html>x     color: #ffd6f3;
-      margin-top: 10px;
-      max-width: 80%;
-    }
 
-    @keyframes glow {
-      from {
-        text-shadow: 0 0 10px #ff99cc, 0 0 20px #ff6699;
-      }
-      to {
-        text-shadow: 0 0 30px #ff6699, 0 0 60px #ff3366;
-      }
+    h1, p {
+      animation: fadeIn 2s ease forwards;
     }
   </style>
 </head>
 <body>
   <h1>LOVE</h1>
-  <p>"Two hearts, one rhythm, endless story."</p>
+  <p>“Higugmaon tika bata man ta or tigulang na.”</p>
 </body>
 </html>
