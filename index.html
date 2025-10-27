@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Love</title>
   <style>
     body {
@@ -12,29 +12,50 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      background-color: #a36cf0; /* purple background */
-      border: 10px solid transparent;
-      border-image: linear-gradient(45deg, #ff5f9e, #ff6fb5, #ff8299);
+      background-color: #a36cf0; /* Purple background */
+      border: 12px solid;
+      border-image: linear-gradient(45deg, #ff6f91, #ff4b6e);
       border-image-slice: 1;
-      border-radius: 20px;
-      box-sizing: border-box;
-      text-align: center;
-      overflow: hidden;
+      border-radius: 25px;
+      animation: glow 5s ease-in-out infinite;
+    }
+
+    @keyframes glow {
+      0% { box-shadow: 0 0 10px #ff6f91, 0 0 20px #ff4b6e; }
+      50% { box-shadow: 0 0 25px #ff4b6e, 0 0 40px #ff6f91; }
+      100% { box-shadow: 0 0 10px #ff6f91, 0 0 20px #ff4b6e; }
     }
 
     h1 {
-      font-family: "Poppins", sans-serif;
-      font-size: 90px;
+      font-size: 100px;
+      font-family: 'Georgia', cursive;
       color: white;
-      letter-spacing: 10px;
       margin: 0;
-      animation: glow 3s ease-in-out infinite alternate;
+      text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+      animation: fadeIn 2s ease forwards;
     }
 
     p {
-      font-family: "Georgia", serif;
       font-size: 18px;
-      color: #ffd6f3;
+      color: #fff0f5;
+      font-style: italic;
+      margin-top: 10px;
+      max-width: 80%;
+      text-align: center;
+      animation: fadeIn 3s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <h1>LOVE</h1>
+  <p>“Our souls met long before our eyes did.”</p>
+</body>
+</html>x     color: #ffd6f3;
       margin-top: 10px;
       max-width: 80%;
     }
