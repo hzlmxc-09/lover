@@ -1,10 +1,56 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>My Mini Website</title>
-  </head>
-  <body style="font-family: Arial; text-align: center; background: pink; color: purple; margin-top: 50px;">
-    <h1>Welcome to My Website 🌸</h1>
-    <p>Hi! I’m Hazel Mae — this is my first mini website made using GitHub!</p>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Love</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #a36cf0; /* purple background */
+      border: 10px solid transparent;
+      border-image: linear-gradient(45deg, #ff5f9e, #ff6fb5, #ff8299);
+      border-image-slice: 1;
+      border-radius: 20px;
+      box-sizing: border-box;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-family: "Poppins", sans-serif;
+      font-size: 90px;
+      color: white;
+      letter-spacing: 10px;
+      margin: 0;
+      animation: glow 3s ease-in-out infinite alternate;
+    }
+
+    p {
+      font-family: "Georgia", serif;
+      font-size: 18px;
+      color: #ffd6f3;
+      margin-top: 10px;
+      max-width: 80%;
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 10px #ff99cc, 0 0 20px #ff6699;
+      }
+      to {
+        text-shadow: 0 0 30px #ff6699, 0 0 60px #ff3366;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>LOVE</h1>
+  <p>"Two hearts, one rhythm, endless story."</p>
+</body>
 </html>
