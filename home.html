@@ -1,1 +1,65 @@
-for home love
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Love</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #a36cf0;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      border: 12px solid;
+      border-image: linear-gradient(45deg, #ff6f91, #ff4b6e);
+      border-image-slice: 1;
+      border-radius: 25px;
+    }
+
+    h1 {
+      font-size: 50px;
+      margin-bottom: 40px;
+      text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .button {
+      background: #ff6f91;
+      color: white;
+      border: none;
+      padding: 15px 40px;
+      font-size: 20px;
+      margin: 10px;
+      border-radius: 30px;
+      cursor: pointer;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+
+    .button:hover {
+      background: #ff4b6e;
+      transform: scale(1.05);
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to Our Space 💜</h1>
+
+  <div class="container">
+    <a href="freedomwall.html" class="button">Freedom Wall</a>
+    <a href="album.html" class="button">Album</a>
+    <a href="memories.html" class="button">Memories</a>
+  </div>
+</body>
+</html>
